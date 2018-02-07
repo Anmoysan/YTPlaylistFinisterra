@@ -64,7 +64,7 @@ public class ParseVideos {
                             } else if ( tagName.equalsIgnoreCase("videoId")){
                                 currentRecord.setId(textValue);
                             } else if ( tagName.equalsIgnoreCase("thumbnail")){
-                                String url = xpp.getAttributeValue("url", null);
+                                String url = xpp.getAttributeValue(null, "url");
                                 currentRecord.setImagen(url);
                             } else if ( tagName.equalsIgnoreCase("title")){
                                 currentRecord.setTitulo(textValue);
